@@ -5,8 +5,10 @@ def max_of(a: Sequence) -> Any:
     maximum = a[0]
     for i in range(1, len(a)):
         if a[i] > maximum:
+            print("判定の中!")
             maximum = a[i]
-        return maximum
+    # returnの位置がおかしかった
+    return maximum
 if __name__ == '__main__':
     print('配列の最大値を求めます')
     num = int(input('要素数：'))
