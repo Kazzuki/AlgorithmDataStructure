@@ -2,10 +2,11 @@ from typing import Any, Sequence
 
 def max_of(a: Sequence) -> Any:
     """シーケンスaの要素の最大値を返す"""
+    # 配列が空の場合
+    if not a: return "なし"
     maximum = a[0]
     for i in range(1, len(a)):
         if a[i] > maximum:
-            print("判定の中!")
             maximum = a[i]
     # returnの位置がおかしかった
     return maximum
