@@ -14,16 +14,13 @@ if __name__ == '__main__':
     # コンソールから要素を格納(ソートされている配列が欲しいのでチェックする)
     input_array[0] = int(input(f'x[{0}]：'))
 
-    for i in range(1,len(input_array)):
-        input_num = int(input(f'x[{i}]：'))
+    for i in range(1,num):
         # 前の値より大きければOKI
         while True:
-            if input_array[i-1] < input_num:
-                input_array[i] = input_num
+            input_array[i] = int(input(f'x[{i}]：'))
+            if input_array[i-1] <= input_array[i]:
                 break
-            else: 
-                print("前の数より大きい数字を入れて〜")
-                input_num = int(input(f'x[{i}]：'))
+            print("前の数以上の数字を入れて〜")
     
     print(input_array)
 """
