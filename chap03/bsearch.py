@@ -1,8 +1,24 @@
 from typing import Any, Sequence
 
 def bin_search(a: Sequence, key: Any) -> int:
-    """シーケンスaからKeyと等価な要素を線形探索(for文)"""
-    
+    """シーケンスaからKeyと等価な要素を2分探索"""
+    pl = 0
+    pr = len(a) - 1
+
+    # 終了条件は、①見つけたら②探索範囲がなくなったら
+    while True:
+        pc = pl + pr // 2
+        if a[pc] == key:
+            return pc
+        # keyが配列の後半にある場合
+        elif a[pc] < key:
+            pl = pc + 1 
+        # keyが配列の前半にある場合
+        else:
+            pl = pc - 1
+        if pr < pl:
+            return -1
+
 
 if __name__ == '__main__':
     num = int(input("要素数："))
@@ -23,7 +39,7 @@ if __name__ == '__main__':
             print("前の数以上の数字を入れて〜")
     
     print(input_array)
-"""
+
     key = int(input('探したい数字を入力してください：'))
     
 
@@ -32,4 +48,3 @@ if __name__ == '__main__':
     # 判定の結果
     if id == -1: print('見当たりませんね。')
     else: print(f'x[{id}]に存在しました')
-"""
