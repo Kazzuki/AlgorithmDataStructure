@@ -79,9 +79,3 @@ class CahinedHash:
                 print(f' -> {p.key} ({p.value})',end='')
                 p = p.next
             print()
-
-# 実行
-chained =  CahinedHash(10)
-chained.dump()
-chained.add('kauzki', 23)
-chained.dump()
