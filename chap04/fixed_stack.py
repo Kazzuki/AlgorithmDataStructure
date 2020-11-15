@@ -60,7 +60,6 @@ class FixedStack:
                 return i
         return -1
     
-    # WIP
     def count(self, value: Any) -> int:
         """Returns the number of values in the stack"""
         c = 0
@@ -71,8 +70,7 @@ class FixedStack:
     
     def __contains__(self, value: Any) -> bool:
         """Determining if the stack has value"""
-        if (self.count(value) != 0): is_exist = True 
-        return is_exist
+        return bool(self.count(value))
 
     def dump(self) -> None:
         """View the entire stack"""
