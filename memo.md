@@ -10,6 +10,7 @@ c -> center
 ■defは
 reruntが評価されれば処理が終了する
 つまり、whileを使っている場合でもbreakで抜ける必要はない
+・複数の値をreturnで返すことはできるのか？
 
 ■emun型(列挙型)
 enumモジュールからEnumをインポートする
@@ -24,3 +25,9 @@ type(),isinstance()
 ■classの宣言に関して
 Class(object):　→　に統一する
 def hoge(self, guha):
+
+■passとcontinueの挙動ってどうなるの？？
+
+■用語
+gcd(greatest common divisor) → 最大公約数
+lcm(least common multiple) → 最小公倍数

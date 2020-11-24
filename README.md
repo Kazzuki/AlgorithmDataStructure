@@ -7,6 +7,7 @@
     (ex.)"Fix refactoring <説明>" とする
  ・Udemyの該当講座も確認する
  ・chap03/open_hashからコメント分も基本英語でかく
+ ・memo.mdには本書での疑問を書き調べる
 
 
 # 苦手な事
